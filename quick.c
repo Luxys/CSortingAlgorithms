@@ -6,6 +6,15 @@
 #include <stdio.h>
 #include <stdbool.h>
 
+/*
+ * Quicksort
+ * --
+ * WC: O(n^2)
+ * AC: O(n logn)
+ * BC: O(n logn)
+ *
+ * -> "Divide and conquer"
+ */
 void quickSort(int *arr, int size, int l, int r) {
     printf("Quicksort for [l:%d, r:%d]:\n", l, r);
     if (r>l) {

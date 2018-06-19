@@ -8,6 +8,7 @@
 #include "bubble.h"
 #include "insertion.h"
 #include "quick.h"
+#include "heap.h"
 
 void printArray(int *arr, int size) {
     for (int i=0; i < size; i++) {
@@ -15,6 +16,7 @@ void printArray(int *arr, int size) {
     }
     printf("\n\n");
 }
+
 
 int main() {
     int arr[5] = {8,6,5,2,12};
@@ -31,9 +33,11 @@ int main() {
 //    insertionSort(arr, size);
 //    printArray(arr, size);
 
-    quickSort(arr, size, 0, size-1);
+//    quickSort(arr, size, 0, size-1);
+//    printArray(arr, size);
+    
+    heapSort(arr, size);
     printArray(arr, size);
-
 
     return 0;
 }

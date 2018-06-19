@@ -5,6 +5,15 @@
 #include "insertion.h"
 #include <stdio.h>
 
+/*
+ * Insertion Sort
+ * --
+ * WC: O(n^2)
+ * AC: O(n^2)
+ * BC: O(n)
+ *
+ * -> "Insert element at its correct position"
+ */
 void insertionSort(int *arr, int size) {
     printf("Insertion Sort:\n");
     for (int i=0; i < size; i++) {
