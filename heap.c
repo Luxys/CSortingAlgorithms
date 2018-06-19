@@ -33,7 +33,9 @@ void heapSort(int *arr, int size) {
     }
 }
 
-
+/*
+ * Correct heap by putting largest element as root
+ */
 void heapify(int *arr, int size, int i) {
 
     int v = i; // root is at position i
@@ -72,8 +74,14 @@ void heapify(int *arr, int size, int i) {
 }
 
 
-
+/*
+ * Build heap: rearrange array
+ */
 void buildHeap(int *arr, int size) {
+
+    /*
+     * Heapify from bottom to top to place largest element as root
+     */
     for (int i = (size/2-1); i >= 0; i--) {
         heapify(arr, size, i);
     }

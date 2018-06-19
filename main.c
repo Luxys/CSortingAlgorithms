@@ -9,7 +9,11 @@
 #include "insertion.h"
 #include "quick.h"
 #include "heap.h"
+#include "counting.h"
 
+/*
+ * Just a printing function..
+ */
 void printArray(int *arr, int size) {
     for (int i=0; i < size; i++) {
         printf("%d ", arr[i]);
@@ -17,7 +21,9 @@ void printArray(int *arr, int size) {
     printf("\n\n");
 }
 
-
+/*
+ * Main Program (uncommment desired algorthm and comment the others)
+ */
 int main() {
     int arr[5] = {8,6,5,2,12};
     int size = (sizeof(arr)/ sizeof(arr[0]));
@@ -26,17 +32,20 @@ int main() {
 
 //    selectionSort(arr, size);
 //    printArray(arr, size);
-
+//
 //    bubbleSort(arr, size);
 //    printArray(arr, size);
-
+//
 //    insertionSort(arr, size);
 //    printArray(arr, size);
-
+//
 //    quickSort(arr, size, 0, size-1);
 //    printArray(arr, size);
-    
-    heapSort(arr, size);
+//
+//    heapSort(arr, size);
+//    printArray(arr, size);
+
+    countingSort(arr, size);
     printArray(arr, size);
 
     return 0;
